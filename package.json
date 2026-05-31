@@ -1,0 +1,31 @@
+{
+  "name": "cube-dash",
+  "version": "1.0.0",
+  "description": "Cube Dash Game",
+  "main": "desktop-launcher.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.cubedash.game",
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    },
+    "files": [
+      "desktop-launcher.js",
+      "index.html",
+      "main.js",
+      "color.css"
+    ]
+  }
+}

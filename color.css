@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: none;
+  background: linear-gradient(#1e1e1e, #222);
+}
+
+#menu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  color: cyan;
+  text-shadow: 0 0 20px cyan;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.skins {
+  display: flex;
+  gap: 10px;
+}
+
+#playBtn {
+  background: cyan;
+  color: black;
+  font-weight: bold;
+}
