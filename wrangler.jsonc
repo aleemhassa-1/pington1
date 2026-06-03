@@ -1,16 +1,9 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "pington1",
+  "compatibility_date": "2026-06-03",
   "assets": {
-    "directory": ".",
-    "binding": "ASSETS",
-    "exclude": [
-      "node_modules/**/*",
-      "desktop-launcher.js",
-      "main.js",
-      "package.json",
-      "wrangler.jsonc",
-      "README.md",
-      ".git/**/*"
-    ]
+    "directory": "./public"
   }
 }
+
